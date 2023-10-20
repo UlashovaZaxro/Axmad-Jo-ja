@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+* {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+    font-family: Tilt Neon, sans-serif;
+}
+
+body {
+    background-color: #292D36;
+    color: #fff;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10%;
+    transition: all 0.50s ease;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 33px;
+}
+
+.navlist {
+    display: flex;
+}
+
+.navlist a {
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 0 30px;
+    transition: all 0.50s ease;
+}
+
+.navlist a:hover {
+    color: #F1CB78;
+}
+
+.navlist .active {
+    color: #F1CB78;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    background: #F1CB78;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.nav-icons svg {
+    vertical-align: middle;
+    font-size: 20px;
+    margin-right: 8px;
+    margin-left: 5px;
+    transition: all 0.50s ease;
+}
+
+.nav-icons:hover {
+    color: #fff !important;
+    background: #fff;
+    transition: all 0.50s ease;
+}
+
+#menu-icon {
+    font-size: 25px;
+    z-index: 1001;
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    padding: 50px 10% 60px;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* ---------------------------home foods img----------------------------- */
+
+.home-img img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    right: -100px;
+}
+
+.home-img>#first-img-food {
+    position: absolute;
+    width: 38%;
+    right: 8%;
+    top: 15%;
+    animation: foodCircle 30s;
+    animation-iteration-count: infinite;
+}
+
+/* .other-food{
+    position: absolute;
+    width: 20%;
+    top: 0px;
+    left: 20px;
+}
+.two-img-food{
+    position: absolute;
+    top: 0%; 
+    left: 8%;
+    margin-bottom:105px;
+}
+
+.three-img-food{
+    position: absolute;
+    top: 20%; 
+    left: -20%;
+    margin-bottom:105px;
+
+}
+.four-img-food{
+    position: absolute; 
+    right:0%;
+    top: 0;
+    /* margin-bottom:125px; 
+} */
+/* --------------------------- end -------------------------------- */
+
+/* ------------------------ Home text --------------------------*/
+.home-text h1 {
+    font-size: 4.2rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 3rem;
+    margin-top: 8rem;
+}
+
+.home-text h1 span {
+    color: #2E7D32;
+}
+
+.home-text p {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.35;
+    margin-bottom: 25px;
+}
+
+.btn-more {
+    display: flex;
+    padding-left: 15px;
+    padding-right: 3px;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+    height: 45px;
+    background-color: #2E7D32;
+    border-radius: 3rem;
+    letter-spacing: 1px;
+    color: #fff;
+    font-weight: 600;
+    transition: all 0.50s ease;
+}
+
+.btn-more i {
+    display: grid;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #132E35;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------ Home text end --------------------------- */
+
+/* ------------------ Home menu start --------------------------- */
+.home-menu {
+    display: grid;
+    grid-template-columns: repeat(8, 4fr);
+    /* transform: translateX(50%); */
+    margin-top: 80px;
+    gap: 1.5rem;
+}
+
+.menu-food {
+    position: relative;
+    background-color: #F1CB78;
+    width: 80px;
+    height: 135px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 38px;
+    cursor: pointer;
+}
+
+.menu-food i {
+    font-size: 32px;
+    background-color: #000;
+    padding: 18px;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* 
+.menu-burger i {
+    font-size: 32px;
+    background-color: #000;
+    padding: 18px;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+*/
+.menu-food a span {
+    font-size: 20px;
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%) translateY(15%);
+    color: #69818d;
+}
+.menu-food:hover a>span {
+    transition: all 0.5s ease;
+    color: #132E35;
+}
+.menu-food:hover a> i {
+    transition: all 0.5s ease;
+    color: orange;
+    left: 50%;
+    transform: scale(1.1) translateX(-45%);
+}
+/* ------------- Section two cards ------------------------ */
+.section-two {
+    width: 100%;
+    height: 150vh;
+    background-color: #132E35;
+    padding-top: 180px;
+}
+
+.section-two h1 {
+    margin-bottom: 30px;
+}
+
+.food-cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    text-align: center;
+    padding: 30px 5%;
+}
+
+.cards-cost {
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 15px;
+    padding: 0px 15px 0 15px;
+    text-align: left;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.cards-cost a i {
+    color: #2E7D32;
+    padding: 5px;
+}
+
+.aboutfood {
+    padding: 5px;
+}
+
+.section-two .cards {
+    position: relative;
+    width: 220px;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.section-two .cards .box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 1s ease;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.section-two .cards .box>h2 {
+    z-index: 1;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 0;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    font-family: monospace, sans-serif;
+    padding: 8px 15px;
+}
+
+.section-two .cards .box .img_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 32px 8px;
+    height: 100%;
+    background-color: #292D36;
+}
+
+.section-two .cards .box .img_box img {
+    position: absolute;
+    top: 45px;
+    left: 10%;
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    animation: foodCircle 30s;
+    animation-iteration-count: infinite;
+    transform: translateX(50%);
+}
+
+.section-two .cards .box .content_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #292D36;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+
+.content_box span {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 22px;
+}
+
+.section-two .cards .box .content_box div {
+    height: 100%;
+    transform-style: preserve-3d;
+    padding: 20px;
+    background: #292D36;
+    transform: translateZ(100px);
+    border-radius: 32px 8px;
+    object-fit: cover;
+}
+
+.section-two .cards .box .content_box div h2 {
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.section-two .cards .box .content_box div p {
+    color: #fff;
+    font-size: 16px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.cards-cost a i:hover {
+    transform: scale(1.3);
+    transition: all 0.50s ease;
+}
+
+.aboutfood:hover {
+    transform: scale(1.3);
+    transition: all 0.50s ease;
+}
+
+.section-two .cards:hover .box{
+    transform: rotateY(180deg);
+}
+.btn-right,
+.btn-left {
+    width: 80px;
+    height: 80px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    cursor: pointer;
+    border-radius: 32px;
+}
+.more-foods a{
+    width: 200px;
+    height: 45px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    background-color: #2E7D32;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 32px;
+    padding: 0;
+    margin: 0;
+    padding: 0px;
+    color: #fff;
+    font-size: 18px;
+    /* line-height: 12px; */
+}
+.more-foods a p{
+margin: 0;
+padding: 0;
+}
+.more-foods a:hover i{
+    scale: 1.3;
+    transition: all 0.50s ease;
+}
+.more-foods a:hover p{
+    letter-spacing: 3px;
+    transition: all 0.50s ease;
+}
+/* ------------------- Section two cards end ---------------------------- */
+/* ------------------- */
+.section-three{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: top;
+    padding-top: 5%;
+    justify-content: center;
+}
+
+.section-three .page-img-box{
+    width: 600px;
+    height: auto;
+    overflow: hidden;
+    margin: 0px 10%;
+}
+.section-three .page-img-box img{
+    border-radius: 132px 18px;
+    width: 95%;
+}
+.page-text-box{
+    width: 90%;
+}
+.page-text-box h1{
+    text-align: center;
+    padding-bottom:20px;
+    font-size: 52px;
+    color: #2E7D32;
+}
+.page-text-box p{
+    width: 90%;
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+/*  */
+.mobile-app{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2.2rem;
+    padding: 10px 10%;
+}
+.mobile-app-img{
+    width: 100%;
+}
+.mobile-app-img img{
+    width: 100%;
+    border-radius: 32px;
+}
+.mobile-app-text h1{
+    line-height: 50px;
+    padding-bottom:20px;
+}
+.mobile-app-text p{
+    line-height: 25px;
+    letter-spacing: 3px;
+}
+.mobile-app-text{
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+.mobile-app-text a img{
+    width: 140px;
+    height: auto;
+    margin: 15px 30px 0 0 ;
+}
+.contact{
+    width: 100%;
+    height: 100vh;
+    background-color: #132E35;
+}
+
+@keyframes foodCircle {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
