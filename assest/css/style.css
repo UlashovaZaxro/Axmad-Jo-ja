@@ -231,6 +231,7 @@ section {
     left: 50%;
     transform: translateX(-50%);
 }
+
 /* 
 .menu-burger i {
     font-size: 32px;
@@ -252,16 +253,19 @@ section {
     transform: translateX(-50%) translateY(15%);
     color: #69818d;
 }
+
 .menu-food:hover a>span {
     transition: all 0.5s ease;
     color: #132E35;
 }
-.menu-food:hover a> i {
+
+.menu-food:hover a>i {
     transition: all 0.5s ease;
     color: orange;
     left: 50%;
     transform: scale(1.1) translateX(-45%);
 }
+
 /* ------------- Section two cards ------------------------ */
 .section-two {
     width: 100%;
@@ -420,9 +424,10 @@ section {
     transition: all 0.50s ease;
 }
 
-.section-two .cards:hover .box{
+.section-two .cards:hover .box {
     transform: rotateY(180deg);
 }
+
 .btn-right,
 .btn-left {
     width: 80px;
@@ -432,11 +437,12 @@ section {
     cursor: pointer;
     border-radius: 32px;
 }
-.more-foods a{
+
+.more-foods a {
     width: 200px;
     height: 45px;
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     background-color: #2E7D32;
     text-align: center;
     align-items: center;
@@ -449,88 +455,104 @@ section {
     font-size: 18px;
     /* line-height: 12px; */
 }
-.more-foods a p{
-margin: 0;
-padding: 0;
+
+.more-foods a p {
+    margin: 0;
+    padding: 0;
 }
-.more-foods a:hover i{
+
+.more-foods a:hover i {
     scale: 1.3;
     transition: all 0.50s ease;
 }
-.more-foods a:hover p{
+
+.more-foods a:hover p {
     letter-spacing: 3px;
     transition: all 0.50s ease;
 }
+
 /* ------------------- Section two cards end ---------------------------- */
 /* ------------------- */
-.section-three{
+.section-three {
     width: 100%;
     height: 100vh;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: top;
     padding-top: 5%;
     justify-content: center;
 }
 
-.section-three .page-img-box{
+.section-three .page-img-box {
     width: 600px;
     height: auto;
     overflow: hidden;
     margin: 0px 10%;
 }
-.section-three .page-img-box img{
+
+.section-three .page-img-box img {
     border-radius: 132px 18px;
     width: 95%;
 }
-.page-text-box{
+
+.page-text-box {
     width: 90%;
 }
-.page-text-box h1{
+
+.page-text-box h1 {
     text-align: center;
-    padding-bottom:20px;
+    padding-bottom: 20px;
     font-size: 52px;
     color: #2E7D32;
 }
-.page-text-box p{
+
+.page-text-box p {
     width: 90%;
     line-height: 30px;
     letter-spacing: 2px;
     font-size: 20px;
 }
+
 /*  */
-.mobile-app{
+.mobile-app {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2.2rem;
     padding: 10px 10%;
 }
-.mobile-app-img{
+
+.mobile-app-img {
     width: 100%;
 }
-.mobile-app-img img{
+
+.mobile-app-img img {
     width: 100%;
     border-radius: 32px;
 }
-.mobile-app-text h1{
+
+.mobile-app-text h1 {
     line-height: 50px;
-    padding-bottom:20px;
+    padding-bottom: 20px;
 }
-.mobile-app-text p{
+
+.mobile-app-text p {
     line-height: 25px;
     letter-spacing: 3px;
 }
-.mobile-app-text{
+
+.mobile-app-text {
     width: 100%;
     height: auto;
     padding: 0;
 }
-.mobile-app-text a img{
+
+.mobile-app-text a img {
     width: 140px;
     height: auto;
-    margin: 15px 30px 0 0 ;
+    margin: 15px 30px 0 0;
 }
-.contact{
+
+.contact {
     width: 100%;
     height: 100vh;
     background-color: #132E35;
@@ -544,4 +566,124 @@ padding: 0;
     100% {
         transform: rotate(360deg);
     }
+}
+
+
+
+/* Footer */
+
+
+footer {
+    background-image: linear-gradient(rgba(42, 42, 42, 0.75), rgba(31, 31, 31, 0.75), rgba(0, 0, 0, 0.75), rgba(31, 31, 31, 0.75)), url(../img/pngtree-restaurant-design-with-shabby-tables-and-chairs-in-dark-grey-picture-image_2680331.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    padding: 20px 9%;
+    transition: 0.2s;
+    background-color: #292D36;
+    color: white;
+    padding-bottom: 20px;
+}
+
+footer .footer_icon img {
+    height: 100px;
+    width: 100px;
+    margin-left: 0px;
+}
+
+footer button {
+    width: 200px;
+    height: 45px;
+    background-color: white;
+    color: rgb(104, 206, 250);
+    border-radius: 7px;
+    margin-left: -20px;
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+footer button:hover {
+    transform: translateY(2px);
+    transition: all.3s ease;
+    color: #F1CB78;
+}
+
+
+
+footer .coll {
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: -60px;
+}
+
+footer .box li {
+    margin: 5px 0;
+}
+
+footer .box i {
+    margin: 10px 5px;
+}
+
+footer .box i:hover {
+    color: #F1CB78;
+    transform: translateY(-2px);
+    transition: all.3s ease;
+}
+
+footer .box li:hover a {
+    color: #F1CB78;
+}
+
+footer .box .boxes,
+.box a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .box h1:hover,
+.box:hover {
+    transform: translateY(-2px);
+    transition: all.3s ease;
+}
+
+footer .coll .boxes {
+    font-size: 20px;
+}
+
+footer .coll {
+    margin-left: 150px;
+    margin-top: -140px;
+}
+
+
+footer .home_links {
+    margin-top: 50px;
+    padding-top: 80px;
+    border-top: 2px solid gray;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .home_links div ul {
+    display: flex;
+}
+
+footer .home_links div ul a{
+   border-right: 3px solid gray;
+   color: white;
+} 
+
+footer .home_links div ul a:last-child{
+    border: none;
+}
+
+footer .home_links div ul a li {
+    padding-right: 10px;
+}
+
+footer .home_links div ul a li:hover{
+    color: #F1CB78;
+    transform: translateY(-2px);
 }

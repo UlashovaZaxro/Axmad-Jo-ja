@@ -436,3 +436,33 @@
         padding: 0px 0% 0px;
     }
 }
+
+@media (max-width: 1100px) {
+
+    footer {
+        padding-left: 10px;
+    }
+
+
+    footer .footer_icon {
+        margin-left: 100px;
+        display: none;
+    }
+
+    footer .coll {
+        display: contents;
+    }
+
+    footer .coll .box {
+        margin: 30px;
+        width: 250px;
+    }
+
+    footer button {
+        margin-left: 20px;
+    }
+
+    .footer .home_links div p{
+        display: none;
+    }
+}
