@@ -574,7 +574,7 @@ section {
 
 
 footer {
-    background-image: linear-gradient(rgba(42, 42, 42, 0.75), rgba(31, 31, 31, 0.75), rgba(0, 0, 0, 0.75), rgba(31, 31, 31, 0.75)), url(../img/pngtree-restaurant-design-with-shabby-tables-and-chairs-in-dark-grey-picture-image_2680331.jpg);
+    background-image: linear-gradient(rgba(69, 69, 69, 0.75), rgba(53, 53, 53, 0.75), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/pngtree-restaurant-design-with-shabby-tables-and-chairs-in-dark-grey-picture-image_2680331.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -596,7 +596,8 @@ footer button {
     width: 200px;
     height: 45px;
     background-color: white;
-    color: rgb(104, 206, 250);
+    color: #36a73a;
+    box-shadow: 3px 2px #F1CB78;
     border-radius: 7px;
     margin-left: -20px;
     margin-top: 10px;
@@ -608,6 +609,7 @@ footer button:hover {
     transform: translateY(2px);
     transition: all.3s ease;
     color: #F1CB78;
+    box-shadow: 3px 2px #36a73a;
 }
 
 
@@ -636,7 +638,7 @@ footer .box li:hover a {
     color: #F1CB78;
 }
 
-footer .box .boxes,
+footer .box .name_box,
 .box a {
     color: white;
     text-decoration: none;
@@ -648,8 +650,9 @@ footer .box h1:hover,
     transition: all.3s ease;
 }
 
-footer .coll .boxes {
+footer .coll .name_box {
     font-size: 20px;
+    color: #36a73a;
 }
 
 footer .coll {
