@@ -575,6 +575,93 @@ section {
     }
 }
 
+/* Order */
+
+
+.order {
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+    /* background-color: #292D36; */
+    /* background-image: linear-gradient(rgba(9, 9, 9, 0.75), rgba(1, 1, 1, 0.75), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../img/drawing-food-background-linear-graphic-2606814.jpg);
+    background-size: cover;
+    background-position: center; */
+}
+
+
+.order h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.order h1 span {
+    color: #2E7D32;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    font-family: mv boli;
+}
+
+.order h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #2E7D32;
+    display: block;
+    position: relative;
+    bottom: 10px;
+}
+
+.order .main_order {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.order .main_order .order_img img {
+    width: 600px;
+}
+
+.order .main_order form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 10px;
+}
+
+.order .main_order form .order_input p {
+    line-height: 25px;
+    color: white;
+}
+
+.order .main_order form .order_input {
+    margin: 5px;
+}
+
+.order .main_order form .order_input input {
+    width: 300px;
+    height: 35px;
+    padding: 0 10px;
+    border: 2px solid #cccccc;
+    outline: none;
+    border-radius: 3px;
+}
+
+.order .main_order form .order_input input:focus {
+    border: 2px solid #2E7D32;
+}
+
+.order .main_order form .order_btn {
+    padding: 10px 0;
+    background: #2E7D32;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
 
 
 /* Footer */
@@ -633,6 +720,7 @@ footer .box li {
 
 footer .box i {
     margin: 10px 5px;
+    Transition: all 0.50s ease;
 }
 
 footer .box i:hover {
@@ -691,6 +779,7 @@ footer .home_links div ul a:last-child{
 
 footer .home_links div ul a li {
     padding-right: 10px;
+    Transition: all 0.50s ease;
 }
 
 footer .home_links div ul a li:hover{
