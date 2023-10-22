@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
-@media only screen and (max-width:1280px) {
+@media only screen and (max-width:1420px) {
     * {
         list-style: none;
         padding: 0;
@@ -185,6 +185,7 @@
         height: 155vh;
         background-color: #132E35;
         padding-top: 30px;
+        overflow: hidden;
     }
 
     .section-two h1 {
@@ -198,7 +199,10 @@
         text-align: center;
         padding: 30px 10%;
     }
-
+    .food-cards :nth-child(9),
+    .food-cards :nth-child(10){
+        display: none;
+    }
 }
 
 @media only screen and (max-width:1120px) {
@@ -208,7 +212,6 @@
         background-color: #132E35;
         padding-top: 30px;
         overflow: hidden;
-
     }
 
     .food-cards {
@@ -310,7 +313,7 @@
         display: grid;
         grid-template-columns: repeat(2, 2fr);
         gap: 1.3rem;
-        padding: 30px 10%;
+        padding: 30px 5%;
     }
 
     .cards:nth-child(5),
@@ -373,7 +376,7 @@
     }
 }
 
-@media only screen and (max-width:482px) {
+@media only screen and (max-width:530px) {
     .home-menu {
         display: grid;
         font-size: 14px;
@@ -420,20 +423,40 @@
         padding: 30px 0%;
         transform: translateX(20%);
     }
+    .logo img{
+        width: 15%;
+    }
 
     .cards:nth-child(4),
     .cards:nth-child(3) {
+        display: none;
+    }
+    .logo img{
+        width: 27%;
+    }
+    .logo span {
         display: none;
     }
 }
 
 @media only screen and (max-width:380px) {
     header {
-        padding: 20px 8%;
+        padding: 0px 10%;
     }
-
     .section {
         padding: 0px 0% 0px;
+    }
+    .logo img{
+        width: 25%;
+    }
+    .logo span {
+        display: none;
+    }
+    .menu-food a span {
+        font-size: 16px;
+    }
+    .menu-food a i{
+        font-size: 27px;
     }
 }
 
