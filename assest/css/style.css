@@ -650,7 +650,9 @@ section {
 }
 
 .order .main_order form .order_input input:focus {
-    border: 2px solid #2E7D32;
+    border: 2px solid #36a73a;
+    box-shadow: 5px 5px 0 0 #2E7D32;
+    Transition: all 0.50s ease;
 }
 
 .order .main_order form .order_btn {
@@ -660,6 +662,13 @@ section {
     text-align: center;
     margin-top: 20px;
     text-decoration: none;
+}  
+
+.order .main_order form .order_btn:hover{
+    Transition: all 0.50s ease;
+    background-color: #F1CB78;
+    color: #2E7D32;
+    box-shadow: 5px 5px 0 0 #2E7D32;
 }
 
 
