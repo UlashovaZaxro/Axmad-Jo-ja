@@ -40,11 +40,13 @@ header {
     font-size: 33px;
     text-align: center;
 }
-.logo img{
+
+.logo img {
     width: 10%;
     height: auto;
     margin-right: 15px;
 }
+
 .navlist {
     display: flex;
     padding-bottom: 15px;
@@ -604,7 +606,7 @@ section {
     content: '';
     width: 100%;
     height: 2px;
-    background-attachment: peru;
+    background-attachment: #2E7D32;
     position: relative;
     background-origin: 15px;
     display: block;
@@ -619,8 +621,8 @@ section {
 
 .review .main_review .review_card {
     width: 350px;
-    height: 450px;
-    box-shadow: 0 2px 8px #0A2A3A;
+    height: auto;
+    box-shadow: 0 2px 8px #4fd355;
     border-radius: 8px;
     background-color: #292D36;
     padding: 8px 20px;
@@ -653,7 +655,7 @@ section {
 }
 
 .review .main_review .review_card .review_text .people_name {
-    color: #0A2A3A;
+    color: #2E7D32;
     transition: 0.3s;
 }
 
@@ -668,6 +670,11 @@ section {
 
 .review .main_review .review_card:hover .review_text .review_icon {
     transform: translateY(-30px);
+}
+
+.review .main_review .review_card:hover .review_text .review_icon i:hover {
+    color: #F1CB78;
+    transform: translateY(-2px)
 }
 
 .review .main_review .review_card .review_text .review_social i {
@@ -783,9 +790,9 @@ section {
     text-align: center;
     margin-top: 20px;
     text-decoration: none;
-}  
+}
 
-.order .main_order form .order_btn:hover{
+.order .main_order form .order_btn:hover {
     Transition: all 0.50s ease;
     background-color: #F1CB78;
     color: #2E7D32;
@@ -898,12 +905,12 @@ footer .home_links div ul {
     display: flex;
 }
 
-footer .home_links div ul a{
-   border-right: 3px solid gray;
-   color: white;
-} 
+footer .home_links div ul a {
+    border-right: 3px solid gray;
+    color: white;
+}
 
-footer .home_links div ul a:last-child{
+footer .home_links div ul a:last-child {
     border: none;
 }
 
@@ -912,7 +919,7 @@ footer .home_links div ul a li {
     Transition: all 0.50s ease;
 }
 
-footer .home_links div ul a li:hover{
+footer .home_links div ul a li:hover {
     color: #F1CB78;
     transform: translateY(-2px);
 }
